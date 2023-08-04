@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body, h1, form, ul,li,a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply some basic styles */
+  body {
+    font-family: "Times New Roman", serif;
+    
+    background: url(https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Ym9va3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60) center/cover no-repeat;
+
+  }
+
+  
+nav {
+    background-color: #1abc9c;
+  }
+  
+  .navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .navigation li {
+    margin-right: 20px;
+  }
+  
+  .navigation li:last-child {
+    margin-right: 0;
+  }
+  
+  .navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+ 
+  .container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .form-group input[type="email"],
+
+  .form-group input[type="password"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+    color: #333;
+     width: 100%; 
+  }
+  .form-group.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group.remember-me label {
+    margin-left: 5px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .additional-links {
+    margin-top: 20px;
+  }
+  
+  .additional-links a {
+    color: #1abc9c;
+    text-decoration: none;
+  }
+  
+  .additional-links a:hover {
+    text-decoration: underline;
+  }
+  

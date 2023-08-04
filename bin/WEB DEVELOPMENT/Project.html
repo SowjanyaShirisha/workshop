@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Website</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #333333;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e1bf11;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Interactive Website</h1>
+    <p>Click the button to change the background color.</p>
+    <button class="button" id="colorButton">Change Color</button>
+
+    <script>
+      // JavaScript code for interactivity
+      const colorButton = document.getElementById('colorButton');
+      const body = document.body;
+
+      colorButton.addEventListener('click', function() {
+        const randomColor = getRandomColor();
+        body.style.backgroundColor = randomColor;
+      });
+
+      function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
+  </div>
+</body>
+</html>
